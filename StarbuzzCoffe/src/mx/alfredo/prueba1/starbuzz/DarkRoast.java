@@ -1,10 +1,11 @@
 package mx.alfredo.prueba1.starbuzz;
 
-public class HouseBlend extends Beverage{
-    private Condiment m;
-    private double cost = 45.0;
 
-    public HouseBlend (Condiment m){
+public class DarkRoast extends Beverage {
+    private Condiment m;
+    private double cost = 70.0;
+
+    public DarkRoast (Condiment m){
         super(m);
         this.m = m;
 
@@ -12,13 +13,12 @@ public class HouseBlend extends Beverage{
     }
 
     public String getDescription(){
-      return "HouseBlend: "+ this.m.getDescription();
+        return "DarkRoast: "+ this.m.getDescription();
 
     }
 
     public double Cost(){
         return this.cost + m.Cost();
     }
-
 
 }

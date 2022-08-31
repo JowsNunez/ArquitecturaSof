@@ -1,13 +1,19 @@
 package mx.alfredo.prueba1.starbuzz;
 
-public class Chocolate implements Condiment{
-    private Condiment m;
-    private double cost = 15.50;
-    private final String  description = "Chocolate: " + cost;
 
-    public Chocolate(){
+
+public class WhippedCream implements Condiment {
+    private double cost =9.5;
+    private Condiment m;
+    private final String  description = "WhippedCream: " + cost;
+
+
+
+    public WhippedCream() {
     }
-    public Chocolate(Condiment m){
+
+    public WhippedCream(Condiment m){
+
         this.m = m;
     }
 
@@ -21,5 +27,4 @@ public class Chocolate implements Condiment{
         if(m!=null) return cost + m.Cost();
         return cost;
     }
-
 }
